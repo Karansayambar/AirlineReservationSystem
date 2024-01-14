@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Airline Reservation Ststem</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo"
+                src="./assets/go-travel-logo-design-lettering-g-air-travel-vector-simple-black-white-concept-trendy-logo-branding-calendar-card-banner-cover-isolated-white-background_10.jpg"
+                alt="">
+            <div class="list">
+                    <span>Book</span>
+                    <span>check-in</span>
+                    <span>Manage</span>
+                <button class="register">Register</button>
+            </div>
+        </nav>
+    </header>
+    <div id="form" style="display: none;">
+        <h1>Register Here</h1>
+        <i class="fa-solid fa-x" id="close" onclick="close()"></i>
+        <form id="registrationForm" action="/register" method="post">
+            <div><label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div><label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div><label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div><label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <button class="form-btn" type="submit" onclick="validateRegistration()">Register <i class="fa-solid fa-user"></i></button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

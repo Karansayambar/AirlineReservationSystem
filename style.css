@@ -1,0 +1,92 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/flight-booking-service.jpg);
+}
+.logo{
+    width: 10%;
+    aspect-ratio: 10/4;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 18px;
+}
+.register{
+    padding: 10px;
+    background-color: rgba(82, 9, 9, 0.741);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+#form{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(165, 42, 42, 0.574);
+    margin-inline: auto;
+    border-radius: 20px;
+}
+#registrationForm{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+}
+#registrationForm > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 3rem;
+    text-align: center;
+    gap: 3rem;
+    font-size: 18px;
+}
+.form-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}
+.fa-x{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.fa-x:hover{
+    background-color: red;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    transform: scale(130%);
+}
+#registrationForm input{
+    background-color: transparent;
+    border: 2px dashed rgb(34, 13, 13);
+    padding: 4px 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 230px;
+}
+#registrationForm label{
+    text-align: left;
+    color: rgb(26, 7, 7);
+}
